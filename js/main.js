@@ -20,7 +20,7 @@ const foto = document.getElementById("fig");
 
 button.addEventListener("click", function () {
   foto.src = "./img/yellow_lamp.png";
-  if (foto.includes("./img/yellow_lamp.png")) {
+  if (foto.src.includes("./img/yellow_lamp.png")) {
     button.value = "Spegni";
   } else {
     button.value = "Accendi";
