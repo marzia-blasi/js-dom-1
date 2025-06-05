@@ -15,10 +15,12 @@
 
 // elemento bottone
 const button = document.getElementById("button");
-
+const foto = document.getElementById("fig");
 // (se il bottone è clikkato si accende)
 
-button.addEventListener("click", function (params) {
-  const foto = document.getElementById("fig");
-  foto.src = "./img/yellow_lamp.pmg";
+button.addEventListener("click", function () {
+  foto.src = "./img/yellow_lamp.png";
 });
+
+console.log(foto);
+console.log(foto.src);
