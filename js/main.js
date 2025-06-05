@@ -17,15 +17,19 @@
 const button = document.getElementById("button");
 const foto = document.getElementById("fig");
 // (se il bottone è clikkato si accende)
+console.log(foto.src);
 
 button.addEventListener("click", function () {
-  foto.src = "./img/yellow_lamp.png";
-  if (foto.src.includes("./img/yellow_lamp.png")) {
-    button.value = "Spegni";
+  if (foto.src.includes("/img/yellow_lamp.png")) {
+    // true - spegni
+    foto.src = "./img/white_lamp.png";
+    button.innerHTML = "<b>Accendi</b>";
   } else {
-    button.value = "Accendi";
+    // false - accendo
+    foto.src = "./img/yellow_lamp.png";
+    button.innerHTML = "<b>Spegni</b>";
   }
 });
 
-console.log(foto);
-console.log(foto.src);
+//console.log(foto);
+//console.log(foto.src);
